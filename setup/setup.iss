@@ -2,16 +2,16 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "文本操作工具"
-#define MyAppVersion "v3.0 bate"
+#define MyAppVersion "v3.0"
 #define MyAppPublisher "Abyss"
-#define MyAppURL "https://blog.nocsi.xyz/category/str_tool"
+#define MyAppURL "https://blog.nocsi.xyz"
 #define MyAppExeName "code.exe"
 
 [Setup]
 ; 注: AppId的值为单独标识该应用程序。
 ; 不要为其他安装程序使用相同的AppId值。
 ; (若要生成新的 GUID，可在菜单中点击 "工具|生成 GUID"。)
-AppId={{B6E91C20-DA2C-4A46-8470-327F74B68E70}
+AppId={{8457ED1C-346B-48EA-ADCE-D747CB76B40D}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -21,12 +21,12 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
-LicenseFile=D:\桌面\文本操作工具\v3.0 bate\setup\License.txt
-InfoAfterFile=D:\桌面\文本操作工具\v3.0 bate\setup\setup.txt
+LicenseFile=D:\桌面\文本操作工具\v3.0\setup\License.txt
+InfoAfterFile=D:\桌面\文本操作工具\v3.0\setup\setup.txt
 ; 以下行取消注释，以在非管理安装模式下运行（仅为当前用户安装）。
 ;PrivilegesRequired=lowest
-OutputDir=D:\桌面\文本操作工具\v3.0 bate
-OutputBaseFilename=Str-Tool Setup
+OutputDir=D:\桌面\文本操作工具\v3.0\setup
+OutputBaseFilename=Str_Tool_Setup
 SetupIconFile=C:\Users\WIN10\Downloads\str_ico.ico
 Compression=lzma
 SolidCompression=yes
@@ -63,8 +63,8 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "D:\桌面\文本操作工具\v3.0 bate\code.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\桌面\文本操作工具\v3.0 bate\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\桌面\文本操作工具\v3.0\code.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\桌面\文本操作工具\v3.0\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; 注意: 不要在任何共享系统文件上使用“Flags: ignoreversion”
 
 [Icons]

@@ -9,8 +9,8 @@ from database import id_card
 #欢迎界面
 print("欢迎进入文本操作工具，这是一个可以进行文本相关操作的工具")
 print("作者：Abyss")
-print("文本操作工具-v3.0 bate")
-print("最后更新于：2020/8/22")
+print("文本操作工具-v3.0")
+print("最后更新于：2020/8/30")
 print("现在进入功能选择界面……")
 sleep(1)
 
@@ -165,7 +165,7 @@ while True:
     elif Function_selection == "7":
         print("")
         print("现在是校检身份证号码模式")
-        card = input("请输入18位身份证号码：")
+        card = input("请输入身份证号码：")
         id_card.check(card)
         sleep(1)
         print("")
@@ -184,9 +184,10 @@ while True:
         print("！！！注意：以上模块在要求输入数字时，请不要输入过大的数字，容易崩溃！目前还没有技术进行优化，抱歉！！！")
         print("")
         print("作者：Abyss，我会在我的博客公布源代码和打包后的exe文件，持续更新，更新内容请留意我的博客！")
-        print("当前版本号：v3.0 bate")
+        print("当前版本号：v3.0")
         print("“文本操作工具”博客专栏：https://blog.nocsi.xyz/category/str_tool")
-        print("本次更新内容：加入校检身份证号码模块")
+        print("本次更新内容：身份证校检模块的部分始终让我不满意，在制作v3.0时，我花费了大量的时间和精力去研究，最后只好选择了最懒（也是最有效）的方法——调库。我使用了id_validator，根据库的功能自己修改了一下id_card库的代码\n目前支持18位身份证和15位身份证（港澳台的也行）的校检和提取身份证信息")
+        print("")
         print("感谢支持！有问题请在博客内反馈！")
         sleep(1)
         print("")
